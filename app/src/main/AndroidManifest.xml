@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.digibanq">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="dev.mobile.digibanq.app.AppController"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="dev.mobile.digibanq.activity.LaunchScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.SignIn"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Register"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.ConfirmCode"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.RegDetailsPersonal"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.RegDetailsEmployment"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.RegDocuments"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.DigiPlanner"
+            android:label="digi PLANA"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.GoalCreation"
+            android:label="Goal Creation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Budget"
+            android:label="Budgeting"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.BudgetDaily"
+            android:label="Budgeting"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.GoalMisceliany"
+            android:label="Goal Miscellany"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.MainActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.BusinessActivity"
+            android:label=""
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.FinancialActivity"
+            android:label="Finance"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.About"
+            android:label="Recent Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.WishList"
+            android:label="Wishlist"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.GoalSpecific"
+            android:label="Goal specific coupons"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.StoreActivity"
+            android:label="Store"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dev.mobile.digibanq.activity.BusinessActivity"/>
+
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.MessagesActivity"
+            android:label="Inbox"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.SearchActivity"
+            android:label="Search"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Grow_money_intro"
+            android:label="Grow your money"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Recent_Activities"
+            android:label="Recent Activities"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.LeanActivity"
+            android:label="Lean Application"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Recover_pass"
+            android:label="Recover Password"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Reset_password"
+            android:label="Recover Password"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="dev.mobile.digibanq.activity.Enter_reset_code"
+            android:label="Recover Password"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

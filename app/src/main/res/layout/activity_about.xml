@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="On"
+        android:textOff="Off"
+        android:layout_gravity="right"
+        android:showText="true"
+        android:thumbTextPadding="@dimen/cardview_default_elevation"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
+        app:showText="true"
+        android:switchMinWidth="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="5dp"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track"
+        android:textSize="8sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"  />
+
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mySwitch"
+        android:layout_marginTop="22dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

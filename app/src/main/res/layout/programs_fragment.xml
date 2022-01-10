@@ -1,0 +1,697 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.mobile.digibanq.fragments.ProgramsFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/prod_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Programs Insight"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_text"
+        android:layout_below="@+id/prod_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Summary"
+            android:textAlignment="center"
+            android:textColor="@color/link"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_summary"
+        android:layout_below="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Programs"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="234"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Reach"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="235"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="432"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Likes"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="245"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="452"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Shares"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="235"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="453"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Comments"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="245"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="532"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Conversions"
+                android:textSize="14dp"
+                android:textColor="@color/blue"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="345"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textColor="@color/timestamp"
+                android:layout_marginLeft="15dp"
+                android:layout_column="4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="492"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
+                android:layout_column="5"/>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/timestamp"/>
+
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/header_text2"
+        android:layout_below="@+id/table_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ongoing Programs"
+            android:textAlignment="center"
+            android:textColor="@color/link"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll1"
+        android:layout_below="@+id/header_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:id="@+id/cast_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nasco_cam">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:textSize="16dp"
+                    android:background="#CC4CAF50"
+                    android:text="Promote"
+                    android:textColor="@color/white"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:background="#CC000000"
+                    android:layout_gravity="bottom">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:text="Woolen Shirt -"
+                            android:textSize="14dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:text="15 DAYS MORE"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:text="Ghana"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nasco_cam">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:textSize="16dp"
+                    android:background="#CC4CAF50"
+                    android:text="Promote"
+                    android:textColor="@color/white"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:background="#CC000000"
+                    android:layout_gravity="bottom">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:text="Woolen Shirt -"
+                            android:textSize="14dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:text="15 DAYS MORE"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:text="Ghana"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nasco_cam">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:textSize="16dp"
+                    android:background="#CC4CAF50"
+                    android:text="Promote"
+                    android:textColor="@color/white"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:background="#CC000000"
+                    android:layout_gravity="bottom">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:text="Woolen Shirt -"
+                            android:textSize="14dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:text="15 DAYS MORE"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:text="Ghana"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nasco_cam">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:textSize="16dp"
+                    android:background="#CC4CAF50"
+                    android:text="Promote"
+                    android:textColor="@color/white"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:background="#CC000000"
+                    android:layout_gravity="bottom">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:text="Woolen Shirt -"
+                            android:textSize="14dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:text="15 DAYS MORE"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:text="Ghana"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
+
+</ScrollView>

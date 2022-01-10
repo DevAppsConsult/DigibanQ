@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/pay_from_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wallet"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="Pay from wallet"/>
+
+        <Button
+            android:id="@+id/other_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_menu_goal_specific_coupons"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="Use other payment options"/>
+
+        <Button
+            android:id="@+id/gift_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_gift"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="Buy as gift code"/>
+
+        <Button
+            android:id="@+id/pay_bank_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_menu_budgets"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="Pay with bank loan"/>
+
+        <Button
+            android:id="@+id/buy_promo_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_menu_promo_coupons"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="Buy as promo code"/>
+
+    </LinearLayout>
+
+</LinearLayout>

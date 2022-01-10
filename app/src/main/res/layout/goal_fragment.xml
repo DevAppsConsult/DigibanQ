@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:background="#e6fffe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            tools:ignore="NestedScrolling">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
+
+            <Button
+                    android:id="@+id/new_goal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/btn_rounded_corner"
+                    android:textColor="@color/timestamp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/add_new_goal"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:textSize="14sp"
+                    android:text="Or choose from available text below"/>
+            <Button
+                    android:background="#7dbc80"
+                    android:id="@+id/save_for_car"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/save_to_buy_a_car"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingLeft="70dp"
+                    android:paddingStart="70dp"
+                    android:paddingEnd="70dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp">
+            </Button>
+
+            <Button
+                    android:id="@+id/save_for_house"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="100dp"
+                    android:textSize="20sp"
+                    android:background="#b598e5"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="@string/save_to_get_a_house"/>
+
+            <ImageButton
+                    android:id="@+id/BtnShowGoals"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/feed_bg"
+                    android:src="@drawable/ic_chevron_right_24dp"/>
+
+            <LinearLayout
+                    android:id="@+id/hiddenGoals"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/save_for_debt"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="100dp"
+                    android:textSize="20sp"
+                    android:background="#e8ca9a"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="@string/save_to_pay_a_debt"/>
+
+            <Button
+                    android:id="@+id/save_for_school"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="100dp"
+                    android:textSize="20sp"
+                    android:background="#b2a18a"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:text="@string/save_for_school"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</ScrollView>

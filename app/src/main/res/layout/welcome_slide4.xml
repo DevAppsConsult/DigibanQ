@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#019CF9">
+
+       <TextView
+           android:id="@+id/logoTxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="70dp"
+           android:text="Connect"
+           android:textColor="@android:color/white"
+           android:textSize="35dp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/tagline"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_below="@+id/logoTxt"
+           android:layout_centerHorizontal="true"
+           android:text="Improve your shopping experience"
+           android:textAlignment="center"
+           android:textColor="@android:color/white"
+           android:textSize="14dp" />
+
+       <TextView
+           android:id="@+id/info"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_below="@+id/tagline"
+           android:layout_centerHorizontal="true"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"
+           android:text="Connect with shop owners and get instant answers to questions about their products / services"
+           android:textAlignment="center"
+           android:textColor="@android:color/white"
+           android:textSize="22dp" />
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/info"
+           android:layout_marginTop="40dp"
+           android:src="@drawable/transact"  />
+
+</RelativeLayout>

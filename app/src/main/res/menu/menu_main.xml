@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.suleiman.material.activities.TabsHeaderActivity">
+   <!-- <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" /> -->
+    <item
+        android:id="@+id/action_alerts"
+        android:icon="@drawable/alerts"
+        android:orderInCategory="100"
+        android:title="Money"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_money"
+        android:icon="@drawable/wallet"
+        android:orderInCategory="100"
+        android:title="Money"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_store"
+        android:icon="@drawable/buy"
+        android:orderInCategory="100"
+        android:title="Store"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_inbox"
+        android:icon="@drawable/filled_message"
+        android:orderInCategory="100"
+        android:title="Inbox"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
+</menu>

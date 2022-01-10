@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_credit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Pay Now To Order"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/bg_screen3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_goal_specific_coupons"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Buy Now With Savings"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/bg_screen3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_cash"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Buy Now With A Loan"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/bg_screen3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

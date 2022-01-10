@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single" android:id="@+id/money">
+        <item android:title="Profiles">
+            <menu>
+                <item android:id="@+id/navigation_item_1"
+                android:checked="true"
+                    app:actionViewClass="android.widget.TextView"
+                android:icon="@drawable/pay"
+                android:title="Kwame Dunken" />
+                <item
+                    android:id="@+id/navigation_item_2"
+                    app:actionViewClass="android.widget.TextView"
+                    android:icon="@drawable/borrow"
+                    android:title="Helios Towers Limited" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Money Feeds">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_3"
+                android:icon="@drawable/ic_menu_account"
+                android:title="My Accounts" />
+            <item
+                android:id="@+id/navigation_item_budget"
+                android:icon="@drawable/ic_menu_budgets"
+                android:title="My Budget" />
+            <item
+                android:id="@+id/spendings"
+                android:icon="@drawable/ic_menu_spendings"
+                android:title="My Spendings" />
+            <item
+                android:id="@+id/goals"
+                android:icon="@drawable/ic_menu_goals"
+                android:title="My Goals" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_feature">
+
+        <item android:title="Social Feed">
+        <menu>
+
+        <item
+            android:id="@+id/navigation_item_4"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_menu_feeds"
+            android:title="Feeds" />
+        <item
+            android:id="@+id/navigation_item_6"
+            android:icon="@drawable/ic_menu_programs"
+            android:title="Programs" />
+        <item
+            android:id="@+id/navigation_item_7"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_menu_delivery"
+            android:title="Delivery Tracking" />
+        <item
+            android:id="@+id/navigation_item_8"
+            android:icon="@drawable/ic_menu_cart"
+            android:title="Orders Placed" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+        </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/group_business">
+
+        <item android:title="Commerce Feeds">
+            <menu>
+
+                <item
+                    android:id="@+id/recent_activities"
+                    android:icon="@drawable/ic_menu_recent_activities"
+                    android:title="Recent Activities" />
+                <item
+                    android:id="@+id/promo_coupons"
+                    android:icon="@drawable/ic_menu_promo_coupons"
+                    android:title="Promo Coupons" />
+                <item
+                    android:id="@+id/goal_specific_coupons"
+                    android:icon="@drawable/ic_menu_goal_specific_coupons"
+                    android:title="Goal Specific Coupons" />
+                <item
+                    android:id="@+id/notes"
+                    app:actionViewClass="android.widget.TextView"
+                    android:icon="@drawable/ic_menu_notes"
+                    android:title="Wishlist" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/stats1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Cashflow"
+                                android:textColor="@color/dot_dark_screen3"
+                                android:layout_alignParentTop="true"/>
+
+                            <TextView
+                                android:id="@+id/spent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/green"
+                                android:text="GHS 1,450"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="20"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/stats2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/stats1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/earnedOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Earned so far"/>
+
+                            <TextView
+                                android:id="@+id/earnedtwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/dot_dark_screen4"
+                                android:layout_marginTop="2dp"
+                                android:text="GHS 2,450"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressBar1"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="20"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/stats3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/stats2">
+
+                            <TextView
+                                android:id="@+id/spent1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Spent so far"/>
+
+                            <TextView
+                                android:id="@+id/spent2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/colorAccent"
+                                android:text="GHS 1,450"/>
+
+
+
+                            <ProgressBar
+                                android:id="@+id/progressBar2"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="20"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Recent Activities"
+                            android:textSize="20dp"
+                            android:textColor="@color/bg_screen3"
+                            android:layout_alignParentTop="true"/>
+                        <LinearLayout
+                            android:id="@+id/listBrand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/textView4">
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="You bought a rice cooker from"/>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:background="@color/feed_bg"
+                                android:layout_marginLeft="62dp"
+                                android:textColor="@color/navigationBarColor"
+                                android:text="View Slip"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/textViewbrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/bg_screen3"
+                            android:text="NASCO Kitchen"
+                            android:layout_below="@+id/listBrand"/>
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/feed_bg"
+                            android:layout_below="@+id/textViewbrand" />
+
+                        <TextView
+                            android:id="@+id/textViewbrandOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="italic"
+                            android:text="Today, 12:45pm"
+                            android:textSize="12dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_below="@+id/line1"/>
+                        <LinearLayout
+                            android:id="@+id/listBrand1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/textViewbrandOne">
+                            <TextView
+                                android:id="@+id/textViewbrandDetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="You borrowed 20GH airtime from"/>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:background="@color/feed_bg"
+                                android:layout_marginLeft="50dp"
+                                android:textColor="@color/navigationBarColor"
+                                android:text="View Slip"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/textViewbrand1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/bg_screen3"
+                            android:text="DigibanQ"
+                            android:layout_below="@+id/listBrand1"/>
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/feed_bg"
+                            android:layout_below="@+id/textViewbrand1" />
+
+                        <TextView
+                            android:id="@+id/textViewbrandTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="italic"
+                            android:text="Today, 1:20pm"
+                            android:textSize="12dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_below="@+id/line2"/>
+                        <LinearLayout
+                            android:id="@+id/listBrand2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/textViewbrandTwo">
+                            <TextView
+                                android:id="@+id/textViewbrandDetails1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="You created a new goal with"/>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:background="@color/feed_bg"
+                                android:layout_marginLeft="73dp"
+                                android:textColor="@color/navigationBarColor"
+                                android:text="View Slip"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/textViewbrand2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/bg_screen3"
+                            android:text="DigiPlana"
+                            android:layout_below="@+id/listBrand2"/>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view3"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/budgetOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/budget1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Budgets"
+                                android:textColor="@color/indigo"
+                                android:layout_alignParentTop="true"/>
+                            <TextView
+                                android:id="@+id/budget_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="italic"
+                                android:textSize="10dp"
+                                android:text="Watch out."
+                                android:textColor="@color/dot_dark_screen3"
+                                android:layout_alignParentTop="true"/>
+                            <TextView
+                                android:id="@+id/budget_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:text="GHS 250"
+                                android:textColor="@color/dot_dark_screen3"
+                                android:layout_alignParentTop="true"/>
+                            <TextView
+                                android:id="@+id/budget_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:textStyle="italic"
+                                android:textSize="10dp"
+                                android:text="more to overspend budget. Goals ahead!!"
+                                android:textColor="@color/dot_dark_screen3"
+                                android:layout_alignParentTop="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/budgetThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/budgetOne"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar4"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="20"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/budgetFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/budgetThree">
+
+                            <TextView
+                                android:id="@+id/budget4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="10dp"
+                                android:textColor="@color/dot_dark_screen3"
+                                android:text="Already spent GHS 3,456 out of GHS 3,706 spending budget"/>
+
+                        </LinearLayout>
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/budgetFour"
+                            android:background="@color/feed_bg"/>
+
+                        <LinearLayout
+                            android:id="@+id/credit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/line3"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/credit1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Credit Position"
+                                android:textColor="@color/indigo"
+                                android:layout_alignParentTop="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/prgrslayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/credit"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar5"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="50"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/cred_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@+id/prgrslayout">
+
+                            <TextView
+                                android:id="@+id/cred_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textSize="10dp"
+                                android:textColor="@color/indigo"
+                                android:text="Already paid GHS 3,456 out of GHS 3,706 owing"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view4"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/spend_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/line3"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/spend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Spending"
+                                android:textColor="@color/indigo"
+                                android:layout_alignParentTop="true"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/alert_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/line3"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/alert_not"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:text="Alerts &amp; Notifications"
+                                android:textColor="@color/indigo"
+                                android:layout_alignParentTop="true"/>
+                            <TextView
+                                android:id="@+id/alert_txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textSize="10dp"
+                                android:text="Your electricity and household bills are due in 7days . Pay to improve your credit score."
+                                android:textColor="@color/timestamp"
+                                android:layout_alignParentTop="true"/>
+                            <TextView
+                                android:id="@+id/alert_txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textSize="10dp"
+                                android:text="You have overspent on your food category. Take advantage of the available offers around you in order to spend less and save more"
+                                android:textColor="@color/indigo"
+                                android:layout_alignParentTop="true"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        app:fab_colorNormal="#0177BE"
+        app:fab_colorPressed="#2196F3"
+        app:fab_colorRipple="#414077"
+        app:fab_showShadow="true"
+        app:fab_shadowColor="#66000000"
+        app:fab_shadowRadius="4dp"
+        app:fab_shadowXOffset="1dp"
+        app:fab_shadowYOffset="3dp"
+        app:fab_size="normal"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_label=""
+        app:fab_progress_color="#FF009688"
+        app:fab_progress_backgroundColor="#4D000000"
+        app:fab_progress_indeterminate="false"
+        app:fab_progress_max="100"
+        app:fab_progress="0"
+        app:fab_progress_showBackground="true"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="#F2ffffff"
+        fab:menu_fab_show_animation="@anim/fab_open"
+        fab:menu_fab_hide_animation="@anim/fab_close">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#fff"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:menu_labels_textColor="#FFFFFF"
+            app:menu_labels_textSize="14sp"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_labels_colorNormal="#333333"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="false"
+            app:menu_labels_ellipsize="none"
+            app:menu_labels_maxLines="-1"
+            app:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            app:menu_labels_position="left"
+            android:src="@drawable/ic_action_location"
+            app:fab_size="mini"
+            app:fab_label="Add new Bank Account"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#fff"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:menu_labels_textColor="#FFFFFF"
+            app:menu_labels_textSize="14sp"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_labels_colorNormal="#333333"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="false"
+            app:menu_labels_ellipsize="none"
+            app:menu_labels_maxLines="-1"
+            app:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            app:menu_labels_position="left"
+            android:src="@drawable/ic_action_location"
+            app:fab_size="mini"
+            app:fab_label="Get new Bank Account"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#fff"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:menu_labels_textColor="#FFFFFF"
+            app:menu_labels_textSize="14sp"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_labels_colorNormal="#333333"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="false"
+            app:menu_labels_ellipsize="none"
+            app:menu_labels_maxLines="-1"
+            app:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            app:menu_labels_position="left"
+            android:src="@drawable/ic_action_location"
+            app:fab_size="mini"
+            app:fab_label="Add new Cards" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#fff"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:menu_labels_textColor="#FFFFFF"
+            app:menu_labels_textSize="14sp"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_labels_colorNormal="#333333"
+            app:menu_labels_colorPressed="#444444"
+            app:menu_labels_colorRipple="#66FFFFFF"
+            app:menu_labels_showShadow="true"
+            app:menu_labels_singleLine="false"
+            app:menu_labels_ellipsize="none"
+            app:menu_labels_maxLines="-1"
+            app:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            app:menu_labels_position="left"
+            android:src="@drawable/ic_action_location"
+            app:fab_size="mini"
+            app:fab_label="Invest your money" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0177BE"
+            app:fab_colorPressed="#2196F3"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            fab:menu_labels_position="left"
+            android:src="@drawable/ic_action_motor"
+            fab:fab_size="mini"
+            app:fab_label="Apply fo Bank loan" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#008A42"
+            app:fab_colorPressed="#008A42"
+            app:fab_colorRipple="#4CAF50"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            fab:menu_labels_position="left"
+            android:src="@drawable/ic_action_store"
+            fab:fab_size="mini"
+            fab:fab_label="Quick manage goals" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0177BE"
+            app:fab_colorPressed="#2196F3"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            fab:menu_labels_position="left"
+            android:src="@drawable/ic_action_star"
+            fab:fab_size="mini"
+            app:fab_label="Quick manage Budget" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0177BE"
+            app:fab_colorPressed="#2196F3"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/Animation.AppCompat.DropDownUp"
+            fab:menu_labels_position="left"
+            android:src="@drawable/ic_action_manage_store"
+            fab:fab_size="mini"
+            app:fab_label="Add new Goal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_colorPressed="#fff"
+            app:fab_colorRipple="#414077"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_style="@style/AppTheme"
+            fab:menu_labels_position="left"
+            android:src="@drawable/ic_action_purchase_history"
+            fab:fab_size="mini"
+            fab:fab_label="Get an emergency fund" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

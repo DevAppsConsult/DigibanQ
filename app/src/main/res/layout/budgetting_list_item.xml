@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white">
+    <LinearLayout
+            android:id="@+id/items"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/expandedListItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="#757584"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/item_name_placeholder"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/items_amount"
+            android:layout_alignLeft="@+id/items"
+            android:layout_alignStart="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/expandedListEditbox"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:hint="@string/ghs"
+                android:textColor="@color/white"
+                android:background="#DBDBEA"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

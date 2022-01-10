@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.mobile.digibanq.fragments.StoreFrontFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.mobile.digibanq.fragments.StoreFrontFragment">
+
+    <Button
+        android:id="@+id/btn_insight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="View Store Insights"
+        android:layout_alignParentTop="true"
+        android:background="@color/feed_bg"/>
+
+    <LinearLayout
+        android:id="@+id/prod1_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/nasco_cam"
+        android:orientation="vertical"
+        android:layout_below="@+id/btn_insight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nasco Ghana Limited"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nasco_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="Shares"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Messages"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/prod1_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new product / service"
+            android:textSize="12dp"
+            android:textColor="@color/link"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Add new promo"
+            android:textSize="14dp"
+            android:textColor="@color/link"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

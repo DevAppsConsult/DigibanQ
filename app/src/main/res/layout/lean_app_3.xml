@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EDF2F5"
+    tools:showIn="@layout/activity_lean">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:id="@+id/logoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutDots"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="120dp"
+            android:text="lets start by answering the following questions"
+            android:textColor="@color/indicator_unselected"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/logoTxt"
+            android:text="Your first and middle names"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/indicator_unselected"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/Un"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagline"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="165dp"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="full name here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/fn"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="165dp"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="middle name here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/mn"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Un_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Un"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:text="lets start by answering the following questions"
+            android:textColor="@color/indicator_unselected"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:id="@+id/Other_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Un_instructions"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your surname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:hint="surname here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_sn"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_maiden_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your maiden name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="middle name here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_maiden_name"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your date of birth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="dd/mm/yy"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_dob"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_pob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your place of birth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="enter plcae of birth here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_pob"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_nationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your nationality"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="enter nationality here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_nationality"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Other_names"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/selelct_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select supporting id's"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:hint="Voters id"
+                    android:textColorHint="#757584"
+                    android:textColor="#757584"
+                    android:id="@+id/voter"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:hint="Passport id"
+                    android:textColorHint="#757584"
+                    android:textColor="#757584"
+                    android:id="@+id/passport"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:hint="National id"
+                    android:textColorHint="#757584"
+                    android:textColor="#757584"
+                    android:id="@+id/national_id"
+                    android:textSize="12sp" />
+            </RadioGroup>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:hint="Voters id"
+                    android:textColorHint="#757584"
+                    android:textColor="#757584"
+                    android:id="@+id/voter2"
+                    android:textSize="12dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text"
+                    android:hint="Passport id"
+                    android:textColorHint="#757584"
+                    android:textColor="#757584"
+                    android:id="@+id/passport2"
+                    android:textSize="12dp" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_types"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_id_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your id number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:hint="id number here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_id_number"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_id_issue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="ID issue date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="dd/mm/yy"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_id_issue_date"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_id_expiry_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="ID expiry date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="dd/mm/yy"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_tv_id_expiry_date"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_postal_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your postal address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:hint="enter postal address here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_postal_address"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/logoTxt"
+                android:text="Your city"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/indicator_unselected"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/windowBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="enter city here"
+                android:textColorHint="#757584"
+                android:textColor="#757584"
+                android:id="@+id/ed_city"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

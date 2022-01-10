@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">digiBanQ</string>
+    <string name="title_activity_welcome">digiBanQ</string>
+    <string name="element_text">Element</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="logo_title">digiBanQ</string>
+    <string name="slide_1_title">Digi Loans</string>
+    <string name="slide_1_desc">Get a pay day loan in less than 2hrs? We make it happen.</string>
+
+    <string name="slide_2_title">Transactions</string>
+    <string name="slide_2_desc">Perform all your mobile money and bank transactions with no difficulties here.</string>
+
+    <string name="slide_3_title">Cards Available</string>
+    <string name="slide_3_desc">Get a recharge card fast and easy with DigibanQ</string>
+
+    <string name="slide_4_title">Great Discounts</string>
+    <string name="slide_4_desc">Buy your favourite products,have them delivered with in 2 hours and pay later</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="logo">DigibanQ</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="sign_in">LOGIN</string>
+    <string name="help">Need help?</string>
+    <string name="reg_link">Create an account here.</string>
+    <string name="reg">SIGN UP</string>
+    <string name="action_search">Search</string>
+    <string name="action_view_module">View Layout</string>
+    <string name="action_settings">Settings</string>
+    <string name="ten">10</string>
+    <string name="three">three</string>
+    <string name="eight">eight</string>
+    <string name="five">five</string>
+    <string name="four">four</string>
+    <string name="nine">nine</string>
+    <string name="one">one</string>
+    <string name="seven">seven</string>
+    <string name="six">six</string>
+    <string name="two">two</string>
+    <string name="alerts">Alerts</string>
+    <string name="money">Money</string>
+    <string name="store">Store</string>
+    <string name="inbox">Inbox</string>
+    <string name="orders">Orders</string>
+    <string name="highlights">Highlights</string>
+    <string name="goal">Goal</string>
+    <string name="programs">programs</string>
+    <string name="store_front">Store Front</string>
+    <string name="budget">Budget</string>
+    <string name="cmd_text">Well done, lets start by adding new goal or select from our listed options</string>
+    <string name="product_hint">Enter Products for the Store</string>
+    <string name="department_store">My Department Store &#8230;</string>
+    <string name="change_merchant">Change merchant</string>
+    <string name="important_notice">Important notice!</string>
+    <string name="nulla_dignissim_elit_et_libero_luctus_convallis_at_in_urna_maecenas_id_efficitur_eros_morbi_orci_libero_dapibus_nec_nibh_nec_tristique_pulvinar_sem_nulla_dignissim_elit_et_libero_luctus_convallis_at_in_urna_nulla_dignissim_elit_et_libero_luctus_convallis_at_in_urna_maecenas_id_efficitur_eros_morbi_orci_libero_dapibus_nec_nibh_nec_tristique_pulvinar_sem_nulla_dignissim_elit_et_libero_luctus_convallis_at_in_urna">Nulla dignissim elit et libero luctus convallis at in urna. Maecenas id efficitur eros. Morbi orci libero, dapibus nec nibh nec, tristique pulvinar sem. Nulla dignissim elit et libero luctus convallis at in urna. Nulla dignissim elit et libero luctus convallis at in urna. Maecenas id efficitur eros. Morbi orci libero, dapibus nec nibh nec, tristique pulvinar sem. Nulla dignissim elit et libero luctus convallis at in urna.</string>
+    <string name="proceed">Proceed</string>
+    <string name="close">close</string>
+    <string name="add_new_goal">Add new goal</string>
+    <string name="save_to_buy_a_car">save to buy a car</string>
+    <string name="save_to_get_a_house">save to get a house</string>
+    <string name="save_to_pay_a_debt">save to pay a debt</string>
+    <string name="save_for_school">save for school</string>
+    <string name="product">Product</string>
+    <string name="total_expected_bill">Total Expected Bill</string>
+    <string name="ghs_2_500">GHS 2,500</string>
+    <string name="add_new_category">Add new category</string>
+    <string name="item_name_placeholder">item name</string>
+    <string name="ghs">GHS</string>
+    <string name="edit">edit</string>
+    <string name="_95_premium_members">95% Premium members</string>
+
+    <string-array name="dept_array">
+        <item>Apparel</item>
+        <item>Beauty</item>
+        <item>Electronics</item>
+        <item>Grocery</item>
+        <item>Home Improvement</item>
+        <item>Jewelry</item>
+        <item>Pharmacy</item>
+    </string-array>
+
+    <color name="snow">#eee9e9</color>
+
+    <string-array name="country_array">
+        <item>Ghana</item>
+        <item>Nigeria</item>
+        <item>Kenya</item>
+        <item>South Africa</item>
+        <item>U.S</item>
+        <item>U.K</item>
+    </string-array>
+</resources>

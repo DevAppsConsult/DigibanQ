@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/sony_logo"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:inputType="text"
+                            android:layout_marginTop="8dp"
+                            android:text="SAMSUNG GHANA"
+                            android:textColor="@color/dot_dark_screen4"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="120dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:inputType="text"
+                            android:textAlignment="center"
+                            android:layout_gravity="center_horizontal"
+                            android:text="SAVE"
+                            android:textColor="@color/dot_dark_screen4"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:inputType="text"
+                            android:textAlignment="center"
+                            android:layout_gravity="center_horizontal"
+                            android:text="20%"
+                            android:textColor="@color/dot_dark_screen1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/prod3_image"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/sony_cam">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/actionbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save Ghs 54 towards"
+                            android:textSize="12dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAVE FOR A CAMERA"
+                            android:textColor="@color/dot_dark_screen4"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="before March 3, 2016"
+                            android:textColor="@color/dot_dark_screen3"
+                            android:textSize="12dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GHS 254"
+                            android:textSize="12dp"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GHS 200"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="18dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buy_to_redeem"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dot_dark_screen1"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/white"
+                            android:text="BUY NOW TO REDEEM"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>

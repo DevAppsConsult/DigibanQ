@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/prod_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View All Order Insight"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Summary"
+                    android:textAlignment="center"
+                    android:textColor="@color/link"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/table_summary"
+                android:layout_below="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Orders"
+                        android:textSize="14dp"
+                        android:textColor="@color/blue"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="234"
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Payments"
+                        android:textSize="14dp"
+                        android:textColor="@color/blue"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GHS"
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="4"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="432"
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Fulfillments"
+                        android:textSize="14dp"
+                        android:textColor="@color/blue"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="4"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="452"
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pending Fulfillments"
+                        android:textSize="14dp"
+                        android:textColor="@color/blue"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="4"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="453"
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Unfilled"
+                        android:textSize="14dp"
+                        android:textColor="@color/blue"
+                        android:layout_column="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/timestamp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="4"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="532"
+                        android:textSize="14dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="15dp"
+                        android:layout_column="5"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/timestamp"/>
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/btn2"
+                android:layout_below="@+id/table_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fulfill Unfilled Orders"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_text2"
+                android:layout_below="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="New Orders"
+                    android:textAlignment="center"
+                    android:textColor="@color/link"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <!-- <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/linear_layout_rb">
+                <RadioButton android:id="@+id/linear_layout_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yes"/>
+                <RadioButton android:id="@+id/grid_layout_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no"/>
+            </RadioGroup> -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginBottom="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textSize="18dp"
+                android:text="Well done, lets start by adding new goal or select from our listed options"
+                android:textColor="#757584"/>
+
+            <Button
+                android:id="@+id/new_goal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="#B9B9C8"
+                android:textColor="@color/colorPrimary"
+                android:text="Add New Goal"/>
+
+            <Button
+                android:id="@+id/save_for_car"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/save_car"
+                android:background="@color/dot_dark_screen2"
+                android:textColor="@color/textColorPrimary"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="SAVE TO BUY A CAR"/>
+
+            <Button
+                android:id="@+id/save_for_house"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/save_house"
+                android:background="@color/dot_dark_screen4"
+                android:textColor="@color/textColorPrimary"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="SAVE TO GET A HOUSE"/>
+
+            <Button
+                android:id="@+id/save_for_debt"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/save_debt"
+                android:background="@color/link"
+                android:textColor="@color/textColorPrimary"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="SAVE TO PAY A DEBT"/>
+
+            <Button
+                android:id="@+id/save_for_school"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="70dp"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/save_school"
+                android:background="@color/dot_light_screen3"
+                android:textColor="@color/textColorPrimary"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="SAVE FOR SCHOOL"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    </RelativeLayout>

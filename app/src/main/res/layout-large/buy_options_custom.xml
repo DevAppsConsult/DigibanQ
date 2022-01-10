@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Pay Now To Order"
+            android:textColor="@color/bg_screen3"
+            android:drawableLeft="@drawable/ic_action_credit"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Buy Now With Savings"
+            android:textColor="@color/bg_screen3"
+            android:drawableLeft="@drawable/ic_menu_goal_specific_coupons"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Buy Now With A Loan"
+            android:textColor="@color/bg_screen3"
+            android:drawableLeft="@drawable/ic_action_cash"/>
+    </LinearLayout>
+
+</RelativeLayout>
